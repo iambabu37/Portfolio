@@ -6,9 +6,12 @@ body{
     color:white
 
 }
+html{
+   scroll-behavior: smooth  ;
+}
  .container{
     margin:10px 10%;
-    height: 100vh;
+    /* height: 100vh; */
  }
 
  .name{
@@ -83,16 +86,24 @@ body{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 450px;
   }
   .col1{
     flex-basis: 35%;
   }
 
   .col1 img{
-    width:100%;
+    width:80%;
     border-radius: 20px;
-    height: 70vh;
+    height: 50vh;
+    margin-top: 10%;
     margin-bottom: 15%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .col1 img:hover{
+    width: 100%;
+    height: 70vh;
   }
   .col2{
     flex-basis:60%;
@@ -161,12 +172,342 @@ body{
     justify-content: space-between;
     gap:20px;
     margin-bottom: 40px;
+    
 }
 
 .cercol1 img{
     width:100%;
     height:320px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ;
 
+}
+.cercol1 img:hover{
+  transform: scale(1.1);
+  
+}
+.hard_img{
+  width:330px;
+  height:320px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.hard_img:hover{
+  width: 320px;
+  transform: translateY(-10px) ;
+  transform: scale(1.1);
 }
 /* .certifi-clas-header{
 } */
+
+/* --------- project --------------- */
+.project_row{
+    height: 380px;
+    display:flex;
+    justify-content: space-between;
+}
+.project_col1{
+    flex-basis: 55%;
+
+}
+
+.project_col2{
+    flex-basis: 45%;
+
+}
+.project_col2 img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:80%;
+    height:320px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.project_col2 img:hover{
+  height:350px;
+  width:100%;
+    
+}
+.git-link{
+  text-decoration:none;
+  font-size: 18px;
+  color:#ff004f;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.git-link:hover{
+  font-size: 24;
+  padding: 10px;
+  color:white;
+  background-color: #ff004f ;
+  border: 1px solid black ;
+
+}
+
+/* -------- contact me -------------------------------- */
+
+.contact-head{
+  font-size: 40px;
+
+}
+
+.contact_row{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.contact_col1{
+  flex-basis: 40%;
+}
+.contact_col2{
+  flex-basis: 60%;
+
+}
+form{
+  margin-left: 10%;
+}
+form input {
+  display:block;
+  width:70%;
+  height:30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+textarea{
+  display:block;
+  width:70%;
+  height:100px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+form input ,form textarea{
+  outline:none;
+  background: #262626;
+  color:#fff;
+  font-size: 16px;
+
+
+
+}
+form button{
+  color:white;
+  display:block;
+  padding:10px;
+  background-color: #ff004f;
+  font-size: 18px;
+  border-radius: 10px;
+  border:none;
+  transition: 0.5s;
+}
+form button:hover{
+  color: #ff004f;
+  background: white;
+  transform: scale(1.1);
+}
+.resume_button{
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ff004f;
+  transition: 0.5s;
+  margin-bottom: 100px;
+}
+.resume_button:hover{
+  background: white;
+  color:#ff004f;
+  transform: scale(1.1);
+
+}
+
+.social-links a i{
+  display:inline;
+  margin-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+
+
+}
+
+div p i{
+  display:inline;
+  margin-right: 10px;
+  font-size: 15px;
+  color:#ff004f;
+  border-radius: 10px;
+  transition: 0.5s;
+
+}
+.social-links a i:hover{
+  transform: translateY(-5px);
+  border: 2px solid white;
+}
+
+
+.footer{
+  margin:0px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:80px;
+  text-align: center;
+  font-size: 18px;
+  width:100%;
+  background: #262626;
+
+}
+
+
+/* -------- css for small screen ---------- */
+nav ul .fa-solid{
+  display:none
+
+}
+nav .fa-solid{
+  display:none;
+}
+
+@media only screen and (max-width:600px){
+   .container{
+    margin: 0px;
+
+   }
+   .text-name p{
+    margin-top:60%;
+    font-size: 16px;
+   }
+   .text-name h1{
+    font-size: 18px;
+    margin-top: 10%;
+
+   }
+   .col1 img{
+    margin-left:10%;
+    width:250%;
+
+   }
+   .about_me{
+    height: 1000px;
+    margin-left: 10%;
+
+   }
+   .certifi-clas-header{
+    font-size: 32px;
+    margin-left: 10%;
+
+   }
+  
+   .certi-row{
+    display:flex;
+    flex-direction: column;
+    margin:0px 10%;
+    width:300px;
+    height:100%
+   }
+   .cercol2 img{
+    margin-top: 8%;
+    height: 300px;
+    width: 300px;
+   }
+   .project_row{
+    margin-left: 10%;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+
+   }
+   .contact_row{
+    margin-left: -20px;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+   }
+   .contact_col2{
+    margin-left: 60px;
+   }
+   .contact-head{
+    font-size: 32px;
+   }
+   .resume_button{
+    width:100px;
+    height:20px;
+    font-size: 18px;
+    padding:15px 15px;
+    text-align: center;
+    margin-bottom: 50px;
+   }
+   .name{
+    margin-left: 10%;
+   }
+   .contact_col2{
+    width:100%;
+   }
+   form input,form textarea{
+    flex-basis: 50%;
+    margin-bottom:20px;
+    width:80%;
+   }
+   form button{
+    margin-left: 30%;
+    margin-bottom: 40px;
+   }
+   .footer{
+    font-size: 16px;
+   }
+   nav ul .fa-solid{
+    display:block;
+    font-size: 25px;
+  
+  }
+  nav .fa-solid{
+    display:block;
+    font-size: 25px;
+  }
+  nav ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:0px;
+    background: #ff004f;
+    position: fixed;
+    margin-top:0;
+    padding-top: 20%;
+    top:0;
+    right:-40%;
+    width: 30%;
+    height:50vh;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+
+    padding: 10px;
+  }
+  .fa-bars{
+    position: absolute;
+    right:30px;
+    top:30px;
+  }
+  nav ul .fa-xmark{
+    position: absolute;
+    left: 10px;
+    top:20px;
+
+  }
+ .foooter{
+  position: absolute;
+  left:0;
+  right:0; 
+ }  
+} 

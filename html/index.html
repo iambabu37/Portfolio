@@ -7,22 +7,25 @@
 
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/7adf119782.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <div class="container">
             <div>
                 <div class="name">
                     <h1 id=name><span id="name-style">@B</span>abu.</h1>
                     <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Certificates</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul id = "sidebar">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#certificates">Certificates</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <i onclick="closemenu"class="fa-solid fa-xmark"></i>
                         </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                     </nav>
                 </div>
                 <div class=text-name>
@@ -38,7 +41,7 @@
 
             <!-- --------- about me ------------- -->
 
-            <div class="about_me">
+            <div id="about" class="about_me">
                 <div class="row">
                     <div class="col1">
                         <img src="../Images/PP 77.jpg" alt="Profile Image ">
@@ -50,20 +53,6 @@
                             voluptate omnis eum cumque?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur earum
                             reprehenderit voluptas eligendi harum esse veniam,
-                            <!DOCTYPE html>
-                            <html lang="en">
-
-                            <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <title>Document</title>
-                            </head>
-
-                            <body>
-
-                            </body>
-
-                            </html>
                         </p>
                         <div class=education-detail>
 
@@ -135,11 +124,11 @@
                     </div>
                 </div>
                 <div class="certi-row">
-                        <!-- ----temporary because of no certifiacte--------- -->
+                    <!-- ----temporary because of no certifiacte--------- -->
 
 
-                    <div class="cercol1">
-                        <img style = "width:329px;height:320px" src="../Images/guvi.png" alt="python_certificate">
+                    <div class="cercol2">
+                        <img class="hard_img" src="../Images/guvi.png" alt="python_certificate">
 
 
                     </div>
@@ -154,42 +143,78 @@
 
             </div>
 
-            <div id = "projects">
-                <div class = "project_row">
-                    <h1 class="certifi-clas-header">My Projects</h1>
+            <div id="projects">
+                <h1 class="certifi-clas-header">My Projects</h1>
+                <div class="project_row">
                     <div class="project_col1">
+                        <h1>Anbac Database </h1>
+                        <p>
+                            The Antibacterial Phytocompound Database is a valuable resource that
+                            compiles information on natural compounds found in plants with
+                            antibacterial properties. This database serves as a comprehensive and
+                            user-friendly repository, off ering a simple yet powerful tool for
+                            researchers, scientists, and healthcare professionals.
+                        </p>
+                        <h3>Tools used </h3>
+                        <p> HTML , CSS , Javascript ,Django and MySQL</p>
+                        <br>
+                        <a class="git-link" href="https://github.com/iambabu37/portfolio.git" target="_blank">Click
+                            Here</a><span style="margin-left: 10px;"> for the Github repository..</span>
+
 
                     </div>
                     <div class="project_col2">
 
-                    </div>
-                    <div class="project_col3">
-
-                    </div>   </div>
-
-            </div>
-
-            <div id = "Contact">
-                <div class = "contact_row">
-                    <h1 class="certifi-clas-header">Contact Me</h1>
-                    <div class="contact_col1">
+                        <img src="../Images/project.png" alt="Project_Image">
 
                     </div>
-                    <div class="contact_col2">
-
-                    </div>
-                    <div class="contact_col3">
-
-                    </div>   
                 </div>
 
             </div>
 
+            <!-- -------------------- contact me ------------------ -->
+
+            <div id="Contact" style="margin-top: 30px;">
+                <div class="contact_row">
+                    <div class="contact_col1">
+                        <h1 class="contact-head">Contact Me</h1>
+
+                        <p><i class="fa-solid fa-paper-plane"></i> babukanthasamy333777@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7867893877</p>
+                        <p><i class="fa-solid fa-address-book"></i>Address:</p>
+                        <p style="margin-left: 7%;">7/46,Mettu street,<br>Paddapai,<br>Kanchepuram-601301.</p>
+                        <div class="social-links">
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                            <a><i class="fa-brands fa-linkedin"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a>
+                            <a><i class="fa-brands fa-facebook"></i></a>
+
+                        </div>
+
+                        <a href="../Images/Resume.pdf" download class="resume_button" href="" download>Resume</a>
 
 
 
+                    </div>
+                    <div class="contact_col2">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <input type="email" name="email" placeholder="Enter your email address" required>
+                            <textarea required name="message" rows="6" placeholder="Enter message here "></textarea>
+                            <button>Submit</button>
+                        </form>
 
-            <script rel="script" src="../js/main.js"></script>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> copy right by @ babu </p>
+        </div>     
+        <script rel="script" src="../js/main.js"></script>
 </body>
 
 </html>

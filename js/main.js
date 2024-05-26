@@ -16,3 +16,11 @@ function opentab(tabname) {
 
 
 } 
+let sidebar = document.getElementById("sidebar")
+function closemenu(){
+    sidebar.style.right="-40%";
+    
+}
+function openmenu(){
+    sidebar.style.right="0";
+}
