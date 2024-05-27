@@ -1,7 +1,5 @@
 let taglinks = document.getElementsByClassName("tag-links")
 let tagcontents = document.getElementsByClassName("tag-content")
-console.log(taglinks, tagcontents)
-
 function opentab(tabname) {
 
     for (tablink of taglinks) {
